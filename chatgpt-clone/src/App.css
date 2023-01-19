@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@200;300;400&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,20 +7,37 @@
   text-align: center;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.heading{
+  font-family: Oswald;
 }
 
-.inputbox {
-  width: 200px;
-  height: 20px;
-  margin: 20px;
-  border-color: rgb(91, 45, 167);
-}
-
-.resultImage{
+.grid-main{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
   margin-top: 40px;
-  width: 350px
+}
+
+.grid-child{
+  border: 1px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.grid-child:hover{
+  background-color: black;
+  color:whitesmoke
+}
+
+.grid-child h3{
+  font-family: Oswald;
+  font-weight: 700;
+  color: blue;
+  text-decoration: underline;
+}
+
+.grid-child p{
+  font-family: Bungee+Spice;
+  font-size: 20px;
+  padding: 10px;
 }
