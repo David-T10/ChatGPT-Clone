@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputbox {
+  width: 200px;
+  height: 20px;
+  margin: 20px;
+  border-color: rgb(91, 45, 167);
+}
