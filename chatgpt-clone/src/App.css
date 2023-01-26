@@ -24,6 +24,18 @@
   cursor: pointer;
 }
 
+.text-box{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.action-btn{
+  width: 200px;
+  font-size: 15px;
+  height: 30px;
+  cursor: pointer;
+}
+
 .grid-child:hover{
   background-color: black;
   color:whitesmoke

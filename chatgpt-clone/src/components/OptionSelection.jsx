@@ -1,18 +1,16 @@
 import React from "react";
 
-export default function OptionSelection({ arrayItems }) {
+export default function OptionSelection({ arrayItems, selectOption }) {
   return (
     <>
       <h1 className="heading">REACT AI APP</h1>
       <div className="grid-main">
-        {arrayItems.map((item) => {
+        {arrayItems.map((item, i) => {
           return (
-            <>
-              <div className = "grid-child">
+              <div className = "grid-child" key={i} onClick={()=>selectOption(item.option)}>
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
               </div>
-            </>
           );
         })}
       </div>
